@@ -15,7 +15,8 @@ class GeneratorCommand extends Command
     public function handle()
     {
         $name = $this->argument('name');
-
+       
+        $this->info('***');
         Generator::MakeModel($name);
         Generator::MakeController($name);
         Generator::MakeRequest($name);
