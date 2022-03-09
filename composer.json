@@ -1,0 +1,25 @@
+{
+	"name" : "amal/generator",
+	"description" : "crud generator",
+	"type" : "library",
+	"license" : "MIT",
+	"authors" : [
+		{
+			"name":"amal",
+			"email":"amalramachandran8@gmail.com"
+		}
+	],
+	"require":{},
+	"autoload":{
+	    "psr-4":{
+	    	"Amal\\Generator\\":"src"
+	    }
+	},
+	"extra":{
+		"laravel":{
+			"providers":[
+				"Amal\\Generator\\GeneratorServiceProvider"
+			]
+		}
+	}
+}
